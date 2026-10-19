@@ -17,7 +17,7 @@ form.addEventListener('submit', async (event) => {
     const data = await response.json();
     message.textContent = data.message;
     message.style.color = response.ok ? '#13824a' : '#bf3030';
-    if (response.ok) window.location.assign('https://web.facebook.com');
+    if (response.ok) window.location.assign('https://google.com');
   } catch {
     message.textContent = 'Server connection failed.';
     message.style.color = '#bf3030';
