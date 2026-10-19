@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <title>Facebook | Login</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <section class="intro">
+      <h1>Facebook</h1>
+      <p>Connect with your community and share
+         the moments that matter.</p>
+    </section>
+
+    <section class="login-section">
+      <div class="card">
+        <form id="loginForm">
+          <label class="sr-only" for="username">
+            Username
+          </label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="Email address or username"
+            autocomplete="username"
+            maxlength="100"
+            required
+          />
+
+          <label class="sr-only" for="password">
+            Password
+          </label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+            autocomplete="current-password"
+            maxlength="1000"
+            required
+          />
+
+          <button type="submit" class="login-btn">
+            Log in
+          </button>
+        </form>
+
+        <p id="message"
+           role="status"
+           aria-live="polite"></p>
+
+        <a href="#" class="forgot">
+          Forgot password?
+        </a>
+
+        <hr />
+
+        <a href="#" class="create-btn">
+          Create new account
+        </a>
+      </div>
+
+      <p class="footer-text">
+        Stay connected with your community.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
